@@ -10,18 +10,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'rinterio-primary': '#ABEF5F',
-                'grey-5': '#494949',
-                'grey-4': '#737373',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'rinterio-primary': '#ABEF5F',
+                        'grey-5': '#494949',
+                        'grey-4': '#737373',
+                        'secondary': 'rgba(171, 239, 95, 0.5)',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <!-- font Awesome script  -->
     <script src="https://kit.fontawesome.com/b69ab936e1.js" crossorigin="anonymous"></script>
     <!-- Monrope font  -->
@@ -44,10 +45,12 @@
     <header class="md:container mx-auto">
         <!-- navigation bar -->
 
-        <nav>
-            <div class="navbar bg-base-100">
+        <nav class="bg-base-100">
+            <div class="navbar">
                 <div class="flex-1">
-                    <div class="w-8 h-8 bg-rinterio-primary rounded-full flex justify-center items-center cursor-pointer mr-2"><i class="fa-solid fa-arrow-right -rotate-45"></i></div>
+                    <div
+                        class="w-8 h-8 bg-rinterio-primary rounded-full flex justify-center items-center cursor-pointer mr-2">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i></div>
                     <a class="text-3xl font-bold cursor-pointer">Rinterio</a>
                 </div>
                 <div class="dropdown dropdown-end">
@@ -68,7 +71,7 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="font-bold text-grey-5">Home</a></li>
@@ -79,20 +82,43 @@
                         <li><a class="text-grey-4">Contact Us</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="hidden lg:inline-flex lg:flex-1 flex-row-reverse">
-                    
-                    
-                    <a class="btn rounde bg-rinterio-primary text-xl font-bold px-6 rounded-3xl">Book Consult 
-                        <div class="w-8 h-8 bg-black  rounded-full flex justify-center items-center cursor-pointer "><i class="fa-solid fa-arrow-right text-white -rotate-45"></i></div>
+
+
+                    <a class="btn rounde bg-rinterio-primary text-xl font-bold px-6 rounded-3xl">Book Consult
+                        <div class="w-8 h-8 bg-black  rounded-full flex justify-center items-center cursor-pointer "><i
+                                class="fa-solid fa-arrow-right text-white -rotate-45"></i></div>
                     </a>
-                    <div class="w-8 h-8 bg-white border-2 border-grey-200 rounded-full flex justify-center items-center cursor-pointer mr-2"><i class="fa-solid fa-cart-shopping"></i></i></div>
-                    <div class="w-8 h-8 bg-white border-2 border-gray-200  rounded-full flex justify-center items-center cursor-pointer mr-2"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    
-                    
+                    <div
+                        class="w-8 h-8 bg-white border-2 border-grey-200 rounded-full flex justify-center items-center cursor-pointer mr-2">
+                        <i class="fa-solid fa-cart-shopping"></i></i></div>
+                    <div
+                        class="w-8 h-8 bg-white border-2 border-gray-200  rounded-full flex justify-center items-center cursor-pointer mr-2">
+                        <i class="fa-solid fa-magnifying-glass"></i></div>
+
+
                 </div>
             </div>
         </nav>
+        <!-- Hero section  -->
+        <div class="hero  ">
+            <div class="hero-content text-center flex flex-col">
+                <div>
+                    <img src="./assets/banner.png" alt="">
+                </div>
+                <div class="max-w-4xl">
+                    <h1 class="text-2xl lg:text-6xl font-bold">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6 text-grey-5">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <a class="btn rounde bg-secondary text-xl font-bold px-6 rounded-3xl">View Details
+                        <div class="w-8 h-8 bg-rinterio-primary  rounded-full flex justify-center items-center cursor-pointer "><i
+                                class="fa-solid fa-arrow-right  -rotate-45"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 </body>
 
